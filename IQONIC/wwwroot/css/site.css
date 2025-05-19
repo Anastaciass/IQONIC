@@ -1,0 +1,122 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #9338AC;
+}
+.navbar-purple {
+    background-color: #9338AC;
+    color: #9338AC;
+}
+
+.nav-link {
+    color: white !important;
+    
+}
+
+.navbar-brand {
+    color: white !important;
+}
+.button {
+    background-color: #6FD9CB;
+    color: #4B0082;
+    padding: 10px 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+    .button:hover {
+        background-color: #5de3d8;
+        color: #3f0f88;
+    }
+
+.navbar, .nav-link, .navbar-brand, .button {
+    font-family: 'Inria Serif', serif;
+}
+.hero-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 10%;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.hero-text {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
+
+.tagline {
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.main-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 48px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+    font-family: 'Inria Serif', serif;
+}
+
+.play-now-btn {
+    background-color: #6FD9CB;
+    color: #4B0082;
+    padding: 12px 25px;
+    border-radius: 15px;
+    text-decoration: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+    font-family: 'Inria Serif', serif;
+}
+
+    .play-now-btn:hover {
+        background-color: #5de3d8;
+        color: #3f0f88;
+    }
+
+.hero-section {
+    margin-top: 50px;
+}

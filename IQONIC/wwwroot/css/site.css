@@ -15,6 +15,7 @@ html {
 html {
   position: relative;
   min-height: 100%;
+  min-width:100%;
 }
 
 body {
@@ -56,10 +57,10 @@ body {
 .hero-flex {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 80px 10%;
     color: white;
     flex-wrap: wrap;
+    margin-left: -100px;
 }
 
 .hero-text {
@@ -68,7 +69,6 @@ body {
 }
 
 .hero-image {
-    flex: 1;
     text-align: right;
 }
 
@@ -89,9 +89,10 @@ body {
 .main-title {
     font-family: 'Press Start 2P', cursive;
     font-size: 48px;
-    line-height: 1.3;
+    line-height: 1.8;
     margin-bottom: 20px;
     color: white;
+
 }
 
 .subtitle {
@@ -99,6 +100,7 @@ body {
     color: #f0f0f0;
     margin-bottom: 30px;
     font-family: 'Inria Serif', serif;
+    margin-left:10px;
 }
 
 .play-now-btn {
@@ -119,4 +121,240 @@ body {
 
 .hero-section {
     margin-top: 50px;
+}
+
+.trial-section {
+    background-color: white;
+    padding: 100px 10% 100px 10%;
+    margin-top: 180px;
+    z-index: 1;
+}
+
+
+
+.trial-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    position: relative;
+    top: -280px; 
+    z-index: 2;
+}
+
+.left-card {
+    flex: 1.2;
+    min-width: 340px;
+}
+
+.right-card {
+    flex: 1;
+    min-width: 150px;
+}
+
+.trial-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 480px;
+    width: 520px;
+    z-index: 2;
+    position:relative;
+    margin-left:40px;
+}
+
+.trial-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.trial-title-block {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+    color: #4B0082;
+}
+
+.trial-title {
+    color: #4B0082;
+    margin-top: 87px;
+    font-size:25px;
+    line-height: 1.8;
+}
+
+.trial-clouds {
+    width: 300px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: -105px;
+}
+
+.trial-content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-shrink:0;
+}
+
+.trial-text {
+    font-size: 19px;
+    color: #4B0082;
+    margin-bottom: 20px;
+    text-align:left;
+    margin-left:0;
+    margin-right:0;
+    width: 300px;
+}
+
+.trial-play-btn {
+    background-color: #6FD9CB;
+    color: #4B0082;
+    padding: 5px 10px;
+    font-size:20px;
+    border-radius: 15px;
+    font-family: 'Inria Serif', serif;
+    text-decoration: none;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 120px;
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-right: 182px; 
+}
+
+
+    .trial-play-btn:hover {
+        background-color: #5de3d8;
+    }
+
+/* === FEATURE секция === */
+.feature-card {
+    background-color: #D66BE3;
+    color: white;
+    border-radius: 20px;
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    height: 340px;
+    width: 370px;
+    margin-top: 60px;
+    z-index: 1;
+    position:relative;
+    margin-left:-25px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: -10px;
+}
+
+.feature-icon-wrapper {
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-icon {
+    width: 65px;
+    height: 65px;
+}
+
+.feature-text {
+    flex: 1;
+}
+
+.feature-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+.feature-desc {
+    font-size: 13px;
+    line-height: 1.2;
+}
+.service-section {
+    background-color: white;
+    padding: 80px 0;
+    width: 100%;
+    margin-top:-400px;
+}
+
+.service-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.service-subtitle {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: #9338AC;
+    margin-bottom: 10px;
+}
+
+.service-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 32px;
+    color: #4B0082;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.service-card {
+    position: relative; /* нужно для абсолютного позиционирования внутри */
+    overflow: visible; /* разрешает выход контента за пределы */
+    width: 320px; /* или сколько тебе надо */
+    min-height: 200px; /* фиксируем высоту */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+    .service-card img {
+        position: absolute; /* ключ! вырывает из потока */
+        top: -40px; /* сдвигаем вверх */
+        left: 180px; /* или центрируй, как нужно */
+        width: 160px; /* можно больше — блок не потянется */
+        height: auto;
+        z-index: 2;
+    }
+
+.card-title {
+    font-weight: bold;
+    font-size: 15px;
+    color: #4B0082;
+    margin-bottom: 5px;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #333;
 }

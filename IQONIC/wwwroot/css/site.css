@@ -328,33 +328,55 @@ body {
 }
 
 .service-card {
-    position: relative; /* нужно для абсолютного позиционирования внутри */
-    overflow: visible; /* разрешает выход контента за пределы */
-    width: 320px; /* или сколько тебе надо */
-    min-height: 200px; /* фиксируем высоту */
+    position: relative;
+    overflow: visible;
+    width: 320px;
+    min-height: 120px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     background-color: white;
+    line-height:1.2;
 }
 
-    .service-card img {
-        position: absolute; /* ключ! вырывает из потока */
-        top: -40px; /* сдвигаем вверх */
-        left: 180px; /* или центрируй, как нужно */
-        width: 160px; /* можно больше — блок не потянется */
-        height: auto;
-        z-index: 2;
-    }
+.service-icon {
+    position: absolute;
+    z-index: 2;
+}
+
+
+.controller-img {
+    top: -50px;
+    left: 90px;
+    width: 300px;
+    height: auto;
+}
+
+.rocket-img {
+    top: -50px;
+    right: -38px;
+    width: 180px;
+    height: auto;
+}
+
+.fairy-img {
+    top: 0px;
+    right: 0px;
+    width: 120px;
+    height: auto;
+}
+
 
 .card-title {
     font-weight: bold;
     font-size: 15px;
     color: #4B0082;
     margin-bottom: 5px;
+    font-family: "Inria Serif";
 }
 
 .card-text {
     font-size: 14px;
-    color: #333;
+    color: #4B0082;
+    font-family: "Inria Serif";
 }

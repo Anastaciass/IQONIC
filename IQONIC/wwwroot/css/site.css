@@ -366,6 +366,10 @@ body {
     height: auto;
 }
 
+.how-top-text {
+    line-height:2.5;
+
+}
 
 .card-title {
     font-weight: bold;
@@ -380,3 +384,191 @@ body {
     color: #4B0082;
     font-family: "Inria Serif";
 }
+.how-section {
+    background: #9338AC;
+    color: white;
+    padding: 100px 10% 80px;
+    position: relative;
+}
+
+.how-title {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 32px;
+    margin-top: 10px;
+    color: white;
+}
+
+.how-clouds {
+    position: absolute;
+    left: 45%;
+    width: 250px;
+    height: auto;
+    z-index: 2;
+    margin-top:-230px;
+}
+
+.how-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.how-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.how-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* расстояние между кнопками */
+    margin-top: 30px;
+}
+
+    .how-buttons button {
+        background: #9338AC;
+        color: white;
+        border: 1px solid white;
+        border-radius: 15px;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-family: 'Inria Serif', serif;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        width: 220px; /* зафиксируй ширину как в макете */
+        text-align: center;
+    }
+
+        .how-buttons button:hover {
+            background-color: #a64de0;
+        }
+
+.how-it-works-section {
+    background-color: #8E24AA; /* Фоновый фиолетовый */
+    padding: 100px 0;
+    color: white;
+    position:relative;
+}
+
+.how-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+.purple-bg-box {
+    margin:auto;
+    background-color: #B15AC9;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2);
+    width: 980px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 40px;
+    padding-top:0px;
+    align-items:center;
+}
+
+.how-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.how-tagline {
+    font-size: 16px;
+    font-family: 'Press Start 2P', sans-serif;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-top:-50px;
+}
+
+.how-title {
+    font-size: 36px;
+    font-family: 'Press Start 2P', sans-serif;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    line-height:1.8;
+}
+
+
+.how-card {
+    background-color: white;
+    color: #4B0082;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 620px; /* как в Figma */
+    height: 350px; /* как в Figma */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 29px;
+    margin-right: -30px;
+}
+
+.how-card-title {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 28px;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    margin-left:20px;
+    margin-top:20px;
+}
+
+.how-card-text {
+    font-size: 16px;
+    margin-bottom: 0;
+    flex-grow: 1; /* занимает всё пространство */
+    font-family: 'Inria Sans', sans-serif;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+.learn-more-btn {
+    display: block;
+    width: 100%;
+    background-color: #6FD9CB;
+    color: #4B0082;
+    padding: 12px 25px;
+    border-radius: 0 0 15px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Inria Sans', sans-serif;
+    text-align: left;
+}
+
+.learn-more-btn:hover {
+    background-color:#4EC3B3;
+    color:#4B0082;
+    text-decoration:none;
+}
+footer.footer {
+    background-color: white;
+    color: #4B0082; /* красивый фиолетовый */
+    border-top: none;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Inria Serif', serif;
+}
+
+    footer.footer a {
+        color: #4B0082;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+        footer.footer a:hover {
+            color: #9338AC; /* чуть насыщеннее при наведении */
+            text-decoration: underline;
+        }
+
+
+

@@ -115,8 +115,9 @@ body {
 }
 
     .play-now-btn:hover {
-        background-color: #5de3d8;
-        color: #3f0f88;
+        background-color: #4EC3B3;
+        color: #4B0082;
+        text-decoration: none;
     }
 
 .hero-section {
@@ -231,7 +232,9 @@ body {
 
 
     .trial-play-btn:hover {
-        background-color: #5de3d8;
+        background-color: #4EC3B3;
+        color: #4B0082;
+        text-decoration: none;
     }
 
 /* === FEATURE секция === */
@@ -552,7 +555,7 @@ body {
 }
 footer.footer {
     background-color: white;
-    color: #4B0082; /* красивый фиолетовый */
+    color: #4B0082; 
     border-top: none;
     text-align: center;
     padding: 10px 0;
@@ -566,9 +569,47 @@ footer.footer {
     }
 
         footer.footer a:hover {
-            color: #9338AC; /* чуть насыщеннее при наведении */
+            color: #9338AC; 
             text-decoration: underline;
         }
 
+@media (max-width: 1024px) {
+    .purple-bg-box {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .how-card {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .how-left {
+        align-items: flex-start;
+    }
+
+    .how-buttons button {
+        width: 100%;
+    }
+
+    .trial-container {
+        flex-direction: column;
+        align-items: center;
+        top: -200px;
+    }
+
+    .trial-card {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .feature-card {
+        width: 100%;
+        margin-left: 0;
+    }
+}
 
 

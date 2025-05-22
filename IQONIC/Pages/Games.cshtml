@@ -1,0 +1,32 @@
+﻿@page
+@model IQONIC.Pages.GamesModel
+@{
+    ViewData["Title"] = "Games";
+}
+<link rel="stylesheet" href="~/css/Games.css" />
+
+<section class="games-section">
+    <div class="games-header">
+        <p class="tagline">LET THE GAMES BEGIN</p>
+        <h1 class="main-title">LEVEL UP<br>YOUR BRAIN</h1>
+    </div>
+
+    <div class="games-grid">
+
+      <!--
+
+      <iframe src="/games/dino/index.html" class="game-frame"></iframe>
+        <iframe src="/games/mathGame/mathGame1/DAWN-SCRIPT/index.html" class="game-frame"></iframe>
+      --> 
+
+      <a href="/Games/dino" >
+            <img src="~/images/dinoGameIcon.png" alt="dinoGameIcon" class="games-icon dinoGameIcon-img" />
+      </a>
+        <a href="/Games/math">
+            <img src="~/images/mathGameIcon.png" alt="mathGameIcon" class="games-icon mathGameIcon-img" />
+        </a>
+    </div>
+</section>
+
+
+

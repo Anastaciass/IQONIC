@@ -1,0 +1,16 @@
+﻿@page
+@model Dino
+@{
+    ViewData["Title"] = "Dino";
+}
+
+@section head {
+    <link rel='stylesheet' href='~/games/dino/JS/style.css' />
+}
+
+<div class="game" id="game">
+    <div id="dino"><img src="~/games/dino/img/dino.png" width="50"></div>
+    <div id="macaroon"><img src="~/games/dino/img/macaroon_purple.png" width="50"></div>
+</div>
+
+<script src="~/games/dino/JS/script.js"></script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathGame</title>
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.1.0/css/uikit.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+</head>
+<body>
+    <div class="card shadow-1">
+        <div class="card-start" id="card-start">
+            <p class="card-start-ready">START</p>
+            <p class="card-start-hint">( Click anywhere to begin )</p>
+        </div>
+
+        <div class="question-stack">
+            <div class="view">
+                <span id="firstNum"></span> + <span id="secNum"></span>
+            </div>
+            <span id="usr-answer-text"></span>
+            <form action="javascript:void(0)" onsubmit="answer()" class="usr-answer">
+                <input type="text" pattern="\d+" id="usr-answer" autofocus />
+                <input type="submit" class="uk-button" id="btn-submit" value="SUBMIT" />
+            </form>
+            <div class="streak">STREAK : <span id="streak-data">0</span></div>
+        </div>
+    </div>
+
+    <div class="notification shadow-1">
+        <div class="notification-text" id="notification-text">
+            <span id="notification-icon"></span>
+            <span id="notification-text-data"></span>
+        </div>
+    </div>
+
+    <div id="high-score">
+        <span>High Score: <span id="high-score-data">0</span></span>
+    </div>
+
+    <div id="copyright">Stacyzzz</div>
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.1.0/js/uikit.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
